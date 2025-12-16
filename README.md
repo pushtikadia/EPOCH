@@ -58,3 +58,9 @@ graph TD;
     NASA -->|JSON Response| Flask;
     Flask -->|Sanitized JSON| Frontend[Browser (Three.js/Globe.gl)];
     Frontend -->|Render| Globe[3D Interactive Globe];
+
+---
+
+<p align="center">
+  <b> EPOCH </b> • Created by <a href="https://github.com/pushtikadia"><b>Pushti Kadia</b></a>
+</p>

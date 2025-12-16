@@ -61,6 +61,3 @@ graph TD;
 
 ---
 
-<p align="center">
-  <b> EPOCH </b> • Created by <a href="https://github.com/pushtikadia"><b>Pushti Kadia</b></a>
-</p>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAIA-WATCH | Planetary Monitor</title>
+    
+    <script src="//unpkg.com/globe.gl"></script>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="globeViz"></div>
+
+    <div class="hud-interface">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-earth-americas"></i> GAIA-WATCH
+            </div>
+            <div class="live-status">
+                <span class="blink">●</span> LIVE SATELLITE FEED
+            </div>
+        </header>
+
+        <div class="panel left-panel">
+            <h3>ACTIVE HAZARDS</h3>
+            <div class="stat-row">
+                <span class="dot red"></span> VOLCANOES
+                <strong id="volcanoCount">0</strong>
+            </div>
+            <div class="stat-row">
+                <span class="dot orange"></span> WILDFIRES
+                <strong id="fireCount">0</strong>
+            </div>
+            <div class="stat-row">
+                <span class="dot blue"></span> STORMS
+                <strong id="stormCount">0</strong>
+            </div>
+        </div>
+
+        <div id="infoCard" class="info-card hidden">
+            <h4 id="eventTitle">Event Title</h4>
+            <p id="eventDate">Date: --</p>
+            <p id="eventType" class="tag">Type</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -53,10 +53,12 @@ Before launching your local tactical server, verify that your machine environmen
    ```bash
    git clone [https://github.com/pushtikadia/EPOCH.git](https://github.com/pushtikadia/EPOCH.git)
    cd EPOCH
-
 2. **Install Backend Dependency Modules:**
-  ```bash
-pip install flask requests
+   ```bash
+   pip install flask requests
+3.**Launch the Local Development Server Pipeline:**
+    ```bash
+    python EPOCH/app.py
 
 ## 🗺️ Data Flow Architecture
 
@@ -72,3 +74,4 @@ pip install flask requests
   │ Glassmorphic HUD│◄────────────────────────┤ 3D Globe Engine  │
   │   (style.css)   │   Reactive Interactivity│    (script.js)   │
   └─────────────────┘                         └──────────────────┘
+

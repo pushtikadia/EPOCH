@@ -20,7 +20,7 @@
 
 ---
 
-📂 Repository Structure
+## 📂 Repository Structure
 The platform decouples data acquisition from the client viewport rendering loop using a dual-layer architecture:
 
 🔹 Backend Core Engine

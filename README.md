@@ -50,13 +50,18 @@ Before launching your local tactical server, verify that your machine environmen
 ## ⚙️ Installation & Workspace Execution
 
 1. **Clone the Core Repository Tree:**
+
    ```bash
    git clone [https://github.com/pushtikadia/EPOCH.git](https://github.com/pushtikadia/EPOCH.git)
    cd EPOCH
+
 2. **Install Backend Dependency Modules:**
+
    ```bash
    pip install flask requests
+
 3.**Launch the Local Development Server Pipeline:**
+   
     ```bash
     python EPOCH/app.py
 

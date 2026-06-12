@@ -21,7 +21,7 @@
 ## 📂 Repository Structure
 The platform decouples data acquisition from the client viewport rendering loop using a dual-layer architecture:
 
-##🔹 Backend Core Engine
+## 🔹 Backend Core Engine
 * **Flask Server Router (app.py):** Acts as the primary microservice endpoint coordinator that handles HTTP traffic routing and static component assets distribution.
 * **Data Sanitization Pipeline:** Connects upstream to the NASA Earth Observatory Natural Hazards Event Tracker API, executing real-time ingestion, filtering, and geographic formatting loops.
 * **Aggregated API Endpoints (/api/disasters):** Proxies data downstream to client scripts, decoupling heavy processing from the frontend WebGL context thread.

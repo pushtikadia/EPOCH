@@ -28,12 +28,12 @@ The platform decouples data acquisition from the client viewport rendering loop 
 * **Data Sanitization Pipeline:** Connects upstream to the NASA Earth Observatory Natural Hazards Event Tracker API, executing real-time ingestion, filtering, and geographic formatting loops.
 * **Aggregated API Endpoints (/api/disasters):** Proxies data downstream to client scripts, decoupling heavy processing from the frontend WebGL context thread.
 
-##🔹 Frontend Visualization Layer
+## 🔹 Frontend Visualization Layer
 * **3D Globe Projection (script.js):** Coordinates hardware-accelerated Three.js context instances and Globe.gl matrix math blocks to map live telemetry vectors seamlessly over a spherical coordinate surface.
 * **Heads-Up Display Styling (style.css):** Employs fluid layout structures alongside blur filter gradients (backdrop-filter) to achieve a high-tech glassmorphism command console interface.
 * **Dashboard Viewport (index.html):** The core semantic document structure managing the canvas rendering frame hooks and overlay status indicators.
 
-##🛠️ Technology Paradigm
+## 🛠️ Technology Paradigm
 
 | Layer Domain | Native Asset Utility | Functional Implementation |
 | :--- | :--- | :--- |
@@ -42,14 +42,14 @@ The platform decouples data acquisition from the client viewport rendering loop 
 | **Data Feed Provider** | NASA EONET Rest API | Live natural hazard tracking feeds, timestamp data, coordinates |
 | **Interface Design** | CSS3 Glassmorphism | Tactical HUD design system, variable themes, absolute spatial layouts |
 
-##🚀 Running Locally
+## 🚀 Running Locally
 
 📋 Prerequisites
 Before launching your local tactical server, verify that your machine environment has:
 * Python 3.10 or higher installed.
 * Standard pip package manager tool configurations configured.
 
-##⚙️ Installation & Workspace Execution
+## ⚙️ Installation & Workspace Execution
 
 1. **Clone the Core Repository Tree:**
    ```bash

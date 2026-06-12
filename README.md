@@ -60,7 +60,7 @@ Before launching your local tactical server, verify that your machine environmen
    ```bash
    pip install flask requests
 
-3.**Launch the Local Development Server Pipeline:**
+3. **Launch the Local Development Server Pipeline:**
    
     ```bash
     python EPOCH/app.py

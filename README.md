@@ -1,60 +1,72 @@
-# 🌐 EPOCH
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" width="100%" style="max-width: 280px; border-radius: 10px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); margin-bottom: 24px;" alt="EPOCH Geospatial Intelligence Banner" />
 
-**EPOCH** is a high-fidelity geospatial intelligence tool designed to visualize Earth's active natural hazards in a cinematic, "War Room" style environment. It leverages **NASA's EONET** data to render real-time disasters on a 3D interactive globe.
+  # 🌐 EPOCH: Geospatial Intelligence Console
 
-## 📂 Repository Structure
+  <p align="center">
+    <img src="https://img.shields.io/badge/Data_Source-NASA_EONET-0B3D91?style=for-the-badge&logo=nasa&logoColor=white" alt="NASA EONET Source"/>
+    <img src="https://img.shields.io/badge/Graphics-Three.js_/_Globe.gl-black?style=for-the-badge&logo=three.js&logoColor=white" alt="WebGL Graphics Engine"/>
+    <img src="https://img.shields.io/github/stars/pushtikadia/EPOCH?style=for-the-badge&color=FFD700&labelColor=1E1E24" alt="Stars"/>
+  </p>
 
-The repository is organized into backend and frontend components to deliver a seamless 3D visualization experience:
+  🗣️ **A high-fidelity geospatial intelligence tool designed to visualize Earth's active natural hazards in a cinematic, "War Room" tactical HUD environment.**
 
-### 🔹 Backend Core
-* **Flask Application:** The main entry point (`app.py`) that handles API routing and serves the application.
-* **Data Processing:** Logic to fetch, sanitize, and format raw JSON telemetry from NASA's EONET API.
-* **API Endpoints:** Custom routes (`/api/disasters`) that bridge the external NASA data with the frontend interface.
+  ___
+</div>
 
-### 🔹 Frontend Visualization
-* **3D Globe Engine:** JavaScript logic (`script.js`) powered by **Three.js** and **Globe.gl** to render the holographic earth.
-* **Reactive Interface:** Glassmorphism styling (`style.css`) for the Heads-Up Display (HUD) and live status indicators.
-* **Dashboard Layout:** Main HTML structure (`index.html`) containing the canvas and overlay elements.
+## 📖 Project Overview
 
----
-
-## 🚀 Getting Started
-
-To run the application locally:
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/pushtikadia/EPOCH.git](https://github.com/pushtikadia/EPOCH.git)
-    ```
-2.  **Navigate to the project directory:**
-    ```bash
-    cd EPOCH
-    ```
-3.  **Install Dependencies:**
-    ```bash
-    pip install flask requests
-    ```
-4.  **Run the application:**
-    ```bash
-    python EPOCH/app.py
-    ```
+**EPOCH** aggregates and visualizes global active wildfire, volcanic, and climatic anomaly telemetry directly on a custom web-based 3D holographic globe interface. By converting raw multi-dimensional data payloads into highly responsive visual markers, it delivers real-time situational awareness modeling.
 
 ---
 
-## 🛠️ Technologies Used
+📂 Repository Structure
+The platform decouples data acquisition from the client viewport rendering loop using a dual-layer architecture:
 
-* **Python 3.10+**
-* **Flask** (Backend Framework)
-* **Three.js & Globe.gl** (WebGL Rendering)
-* **NASA EONET API** (Live Data Source)
+🔹 Backend Core Engine
+* **Flask Server Router (app.py):** Acts as the primary microservice endpoint coordinator that handles HTTP traffic routing and static component assets distribution.
+* **Data Sanitization Pipeline:** Connects upstream to the NASA Earth Observatory Natural Hazards Event Tracker API, executing real-time ingestion, filtering, and geographic formatting loops.
+* **Aggregated API Endpoints (/api/disasters):** Proxies data downstream to client scripts, decoupling heavy processing from the frontend WebGL context thread.
 
----
+🔹 Frontend Visualization Layer
+* **3D Globe Projection (script.js):** Coordinates hardware-accelerated Three.js context instances and Globe.gl matrix math blocks to map live telemetry vectors seamlessly over a spherical coordinate surface.
+* **Heads-Up Display Styling (style.css):** Employs fluid layout structures alongside blur filter gradients (backdrop-filter) to achieve a high-tech glassmorphism command console interface.
+* **Dashboard Viewport (index.html):** The core semantic document structure managing the canvas rendering frame hooks and overlay status indicators.
 
-<p align="center">
-  <b>EPOCH</b> • Created by <a href="https://github.com/pushtikadia"><b>Pushti Kadia</b></a>
-</p>
+🛠️ Technology Paradigm
 
+| Layer Domain | Native Asset Utility | Functional Implementation |
+| :--- | :--- | :--- |
+| **Server Framework** | Python 3.10+ / Flask | API micro-routing, async data requests proxying, data formatting |
+| **Graphics Engine** | Three.js / Globe.gl | Hardware-accelerated WebGL matrix graphics, 3D coordinate plotting |
+| **Data Feed Provider** | NASA EONET Rest API | Live natural hazard tracking feeds, timestamp data, coordinates |
+| **Interface Design** | CSS3 Glassmorphism | Tactical HUD design system, variable themes, absolute spatial layouts |
 
+🚀 Running Locally
 
+📋 Prerequisites
+Before launching your local tactical server, verify that your machine environment has:
+* Python 3.10 or higher installed.
+* Standard pip package manager tool configurations configured.
 
+⚙️ Installation & Workspace Execution
 
+1. **Clone the Core Repository Tree:**
+   ```bash
+   git clone [https://github.com/pushtikadia/EPOCH.git](https://github.com/pushtikadia/EPOCH.git)
+   cd EPOCH
+
+## 🗺️ Data Flow Architecture
+
+```text
+  ┌─────────────────┐       🔥 REST API       ┌──────────────────┐
+  │ NASA EONET API  ├────────────────────────►│  Flask Backend   │
+  └─────────────────┘      JSON Telemetry     │     (app.py)     │
+                                              └────────┬─────────┘
+                                                       │  Sanitized
+                                                       │  Data Payload
+                                                       ▼
+  ┌─────────────────┐       🌌 WebGL Canvas   ┌──────────────────┐
+  │ Glassmorphic HUD│◄────────────────────────┤ 3D Globe Engine  │
+  │   (style.css)   │   Reactive Interactivity│    (script.js)   │
+  └─────────────────┘                         └──────────────────┘

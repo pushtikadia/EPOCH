@@ -6,8 +6,6 @@
   <p align="center">
     <img src="https://img.shields.io/badge/Data_Source-NASA_EONET-0B3D91?style=for-the-badge&logo=nasa&logoColor=white" alt="NASA EONET Source"/>
     <img src="https://img.shields.io/badge/Graphics-Three.js_/_Globe.gl-black?style=for-the-badge&logo=three.js&logoColor=white" alt="WebGL Graphics Engine"/>
-    <img src="https://img.shields.io/github/stars/pushtikadia/EPOCH?style=for-the-badge&color=FFD700&labelColor=1E1E24" alt="Stars"/>
-  </p>
 
   🗣️ **A high-fidelity geospatial intelligence tool designed to visualize Earth's active natural hazards in a cinematic, "War Room" tactical HUD environment.**
 
